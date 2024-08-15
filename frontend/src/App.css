@@ -1,0 +1,14 @@
+.output-container {
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #f9f9f9;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.output {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
