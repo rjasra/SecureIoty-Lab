@@ -1,0 +1,97 @@
+
+.App {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  overflow: hidden; 
+  background-color: #f7f7f7; 
+  color: #333; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.network-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  position: relative;
+  padding: 20px;
+  background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+  max-width: 800px; 
+  margin: 40px auto; 
+}
+
+.pi-container {
+  cursor: pointer;
+  margin: 0 18px;
+  text-align: center;
+  transition: transform 0.3s ease; 
+}
+
+.pi-container:hover {
+  transform: scale(1.1); 
+}
+
+.pi-image {
+  width: 80px; 
+  height: auto;
+  transition: transform 0.3s ease; 
+}
+
+
+
+
+.terminal-container-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: auto;
+  padding: 20px;
+  background-color: #fff; 
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1); 
+}
+
+.terminal-container {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  background-color: #282c34; 
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+  color: #f1f1f1; 
+  position: relative; 
+  transition: transform 0.3s ease; 
+}
+
+.terminal {
+  height: 300px; 
+  width: 100%;
+  border: none; 
+  border-radius: 5px;
+}
+
+.close-button {
+  align-self: flex-end;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: #ff4d4d; 
+  color: white;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  transition: background-color 0.3s ease; 
+}
+
+.close-button:hover {
+  background-color: #ff0000; 
+}
