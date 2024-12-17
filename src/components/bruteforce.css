@@ -1,0 +1,162 @@
+/* General Page Styles */
+.bruteforce {
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+  overflow: hidden;
+  background-color: #03156d;
+   color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  gap: 20px;
+}
+
+/* Title */
+.bruteforce .h1 {
+  color: #6b7280; /* Subtle greyish pastel */
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* Network Diagram Box */
+.network-diagram {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap;
+  gap: 20px;
+  background-color: #ffffff; /* Clean white box */
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the box within the page */
+  max-width: 900px;
+}
+
+.pi-container {
+  cursor: pointer;
+  text-align: center;
+  background-color: #eaf4f4; /* Light pastel blue-green */
+  padding: 15px;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pi-container:hover {
+  background-color: #cfe7e7; /* Slightly darker on hover */
+  transform: translateY(-5px); /* Subtle lift effect */
+}
+
+.pi-image {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  filter: drop-shadow(0px 2px 5px rgba(0, 0, 0, 0.2));
+}
+
+.pi-container p {
+  color: #555;
+  font-weight: 600;
+}
+
+/* Terminal Wrapper */
+.terminal-container-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Terminal Container */
+.terminal-container h2 {
+  display: flex;
+  justify-content: flex-start; /* Align text to the left */
+  align-items: center; /* Center content vertically */
+  padding: 15px;
+  font-size: 1.25rem;
+  background-color: #d1e9ff;
+  color: #333;
+  font-weight: bold;
+  border-bottom: 2px solid #b8dfff;
+}
+
+.terminal-container h2 .close-button {
+  margin-left: auto; /* Push the button to the rightmost end */
+}
+
+.terminal-container {
+  position: relative;
+  width: 100%;
+  min-height: 400px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminal-container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.terminal {
+  background-color: #2c2f36;
+  color: #e0e0e0;
+  border: none;
+}
+
+.close-button {
+  width: 30px;
+  height: 30px;
+  background-color: #ff7a7a;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.close-button:hover {
+  background-color: #ff5252;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+  .terminal-container {
+    width: 90%;
+  }
+}
+
+.back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: #45a049;
+}
