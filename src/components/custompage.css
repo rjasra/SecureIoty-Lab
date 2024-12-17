@@ -1,0 +1,10 @@
+.terminal-overlay {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.terminal-container {
+  flex-grow: 1; 
+  overflow-y: auto; 
+}
