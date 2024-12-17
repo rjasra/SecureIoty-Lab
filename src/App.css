@@ -1,0 +1,57 @@
+.main-page {
+  /* background-image: url('../public/cover10.jpg'); */
+  /* background-color: black; */
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('../public/cover10.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: white;
+  font-size: 2em;
+}
+
+.container {
+  text-align: center;
+}
+
+.container .h1 {
+  font-size: 80px;
+  margin-bottom: 0;
+}
+
+h3{
+  font-size: 30px;
+}
+
+button{
+  color: #fff;
+  border: 1px solid #fff;
+  background: transparent;
+
+  margin: 20px;
+  padding: 12px 34px;
+  font-size: 30px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+}
+
+/* Smaller buttons for Go Back */
+.back-button {
+  margin-top: 20px;
+  padding: 5px 15px;
+  font-size: 14px;
+  background-color: #6c757d;
+}
+
+.back-button:hover {
+  background-color: #5a6268;
+}
