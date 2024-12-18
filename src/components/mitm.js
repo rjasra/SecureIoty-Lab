@@ -6,6 +6,7 @@ import "./mitm.css";
 
 function mitm() {
   const [activePis, setActivePis] = useState([]);
+  const [showFloatingWindow, setShowFloatingWindow] = useState(false); // Floating window state
   const terminalRefs = useRef({});
   const fitAddons = useRef({});
   const terms = useRef({});
@@ -186,6 +187,41 @@ function mitm() {
           </div>
         ))}
       </div>
+
+      <button
+        className="floating-button"
+        onClick={() => setShowFloatingWindow(true)}
+      >
+        Click for steps
+      </button>
+
+      {/* Floating Window */}
+      {showFloatingWindow && (
+        <div className="floating-window">
+          <button
+            className="floating-close"
+            onClick={() => setShowFloatingWindow(false)}
+          >
+            X
+          </button>
+          <p>Step 1: Preheat the oven to 350°F (175°C).</p>
+          <p>Step 2: In a bowl, mix flour and salt together.</p>
+          <p>Step 3: Cut butter into small pieces and add to flour.</p>
+          <p>
+            Step 4: Use your fingers to rub butter into flour until crumbly.
+          </p>
+          <p>Step 5: Gradually add cold water, mixing until dough forms.</p>
+          <p>
+            Step 6: Roll the dough into a ball and refrigerate for 30 minutes.
+          </p>
+          <p>
+            Step 7: On a floured surface, roll out dough to desired thickness.
+          </p>
+          <p>Step 8: Cut dough into shapes or line a pie dish.</p>
+          <p>Step 9: Bake for 20-25 minutes until golden brown and crispy.</p>
+          <p>Step 10: Allow to cool and serve with your favorite filling.</p>
+        </div>
+      )}
     </div>
   );
 }
