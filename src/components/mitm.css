@@ -123,3 +123,82 @@ body {
   overflow-y: auto; /* Enable vertical scrolling for terminal content */
   margin-top: 20px; /* Added margin to create space below button */
 }
+/* Floating button fixed on the right */
+.floating-button {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.floating-button:hover {
+  background-color: #45a049;
+}
+
+/* Floating window */
+/* Floating window */
+.floating-window {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 500px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0); /* Soft gradient background */
+  border-radius: 15px; /* Rounded corners */
+  padding: 30px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000;
+  animation: slideIn 0.3s ease-out; /* Smooth entrance animation */
+}
+
+/* Animation for the floating window */
+@keyframes slideIn {
+  0% {
+    transform: translate(-50%, -30%);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
+}
+
+/* Styling for text content inside the window */
+.floating-window p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Close button inside floating window */
+.floating-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: none;
+  background: red;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px; /* Adjust the size of the X */
+  cursor: pointer;
+  border-radius: 50%; /* Circular close button */
+  text-align: center;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+/* Hover effect for the close button */
+.floating-close:hover {
+  background-color: #d9534f; /* Slightly darker red */
+}
